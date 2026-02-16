@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+    --color-hihs-charcoal: #1a1a1a;
+    --color-hihs-offwhite: #efeeeb;
+    --color-hihs-accent: #d64238;
+
+    --font-sans: Inter, sans-serif;
+}
