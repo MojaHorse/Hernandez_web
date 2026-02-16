@@ -1,6 +1,8 @@
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { useTranslation, Trans } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <footer className="bg-hihs-offwhite text-hihs-charcoal py-8 md:py-12 border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-6 lg:px-24 flex flex-col md:flex-row justify-between items-center gap-8">
@@ -11,7 +13,7 @@ const Footer = () => {
                     </h3>
                     <p className="text-gray-600 mt-4 text-sm">
                         © {new Date().getFullYear()} Hernandez Interior Home Solutions, LLC. <br />
-                        All rights reserved.
+                        {t('footer.rights_reserved')}
                     </p>
                 </div>
 
@@ -34,7 +36,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col items-center md:items-end justify-center md:justify-end md:w-1/3">
-                    <span className="text-[14px] text-black uppercase tracking-widest mb-2">Built By</span>
+                    <span className="text-[14px] text-black uppercase tracking-widest mb-2">{t('footer.built_by')}</span>
                     <img src="/ZeroToOne_Logo.png" alt="Zero To One" className="h-13 w-auto opacity-80 hover:opacity-100 transition-opacity" />
                 </div>
 

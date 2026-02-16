@@ -1,0 +1,112 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "gallery": "Gallery",
+        "our_story": "Our Story",
+        "contact": "Contact",
+        "get_quote_btn": "Get a Quote",
+        "phone": "Call us:",
+        "email": "Email:",
+        "mon_sat": "Mon - Sat: 8:00 AM - 6:00 PM"
+    },
+    "hero": {
+        "est": "EST. 1989",
+        "crafting": "Crafting",
+        "exceptional": "Exceptional",
+        "living_spaces": "Living Spaces",
+        "description": "Premium home renovations and repairs in Central Florida. From drywall to custom carpentry, we bring your vision to life with precision and care.",
+        "start_project": "Start a Project",
+        "view_portfolio": "View Our Work",
+        "scroll": "Scroll"
+    },
+    "about": {
+        "section_label": "About Us",
+        "title_building": "Building Trust,",
+        "title_one_home": "One Home at a Time.",
+        "legacy_title": "A Legacy of Excellence",
+        "legacy_text_1": "Hernandez Interior Home Solutions is a family-owned business built on integrity, quality, and trust. We treat your home as if it were our own.",
+        "legacy_text_2": "With over 35 years of experience, we specialize in transforming spaces with high-end finishes and attention to detail.",
+        "why_choose_title": "Why Choose Us",
+        "reason_1": "Licensed & Insured",
+        "reason_2": "Quality Workmanship",
+        "reason_3": "Transparent Pricing",
+        "reason_4": "Locally Owned",
+        "years_exp": "Years Experience",
+        "projects_completed": "Projects Completed"
+    },
+    "services": {
+        "expertise_label": "Our Expertise",
+        "title": "Premium Home Services",
+        "description": "We bring over three decades of craftsmanship and attention to detail to every project. Whether it's a fresh coat of paint or a complex renovation, we have the skills to elevate your home.",
+        "tile_flooring": "Tile Flooring",
+        "tile_desc": "Professional tile installation for floors, walls, and backsplashes. Detailed patterns and durable finishes.",
+        "drywall": "Drywall Installation",
+        "drywall_desc": "Complete drywall services including installation, finishing, and repair for smooth, seamless walls.",
+        "painting": "House Painting",
+        "painting_desc": "Interior and exterior painting using premium products for vibrant, long-lasting color.",
+        "plumbing": "Plumbing",
+        "plumbing_desc": "Reliable plumbing repairs and fixture installations for kitchens and bathrooms.",
+        "electrical": "Electrical",
+        "electrical_desc": "Safe and efficient electrical services, from fixture installation to minor repairs.",
+        "remodeling": "Remodeling",
+        "remodeling_desc": "Full-service home remodeling to transform your kitchen, bath, or living space.",
+        "custom_closets": "Custom Closets",
+        "custom_closets_desc": "Designed and installed custom shelving and storage solutions to maximize your space.",
+        "appliance": "Appliance Installation",
+        "appliance_desc": "Expert installation of household appliances ensuring proper setup and functionality.",
+        "carpentry": "General Carpentry",
+        "carpentry_desc": "Custom carpentry work including trim, molding, and structural repairs."
+    },
+    "contact": {
+        "get_in_touch": "Get in Touch",
+        "ready_start": "Ready to start your",
+        "next_project": "next project?",
+        "description": "Tell us more about your upcoming project using the form, or give us a call to schedule a free estimate.",
+        "call_us": "Call Us",
+        "email_us": "Email Us",
+        "form_first_name": "First Name",
+        "form_last_name": "Last Name",
+        "form_email": "Email",
+        "form_project_type": "Project Type",
+        "form_message": "Message",
+        "send_request": "Send Request",
+        "placeholder_name": "Jane",
+        "placeholder_lastname": "Doe",
+        "placeholder_email": "jane@example.com",
+        "placeholder_message": "Tell us about your project...",
+        "select_service": "Select a service...",
+        "service_painting": "House Painting",
+        "service_drywall": "Drywall Repair",
+        "service_restoration": "Restoration",
+        "service_other": "Other"
+    },
+    "footer": {
+        "rights_reserved": "All rights reserved.",
+        "built_by": "Built By"
+    },
+    "our_story": {
+        "label": "Our Story",
+        "title": "More than just a space—it's a reflection of you.",
+        "p1": "At HIHS, we recognize that your home is more than just a space—it's a reflection of your lifestyle and personality. Our promise is to treat your home with the respect and care it deserves, ensuring that every project is a seamless blend of professionalism and personalized attention.",
+        "p2": "Over the years we have done everything from basic drywall repair to kitchen remodels to full house renovations. No job is too small for us; however, in recent years we have been focusing on full renovations.",
+        "p3": "We specialize in complete kitchen and bathroom demos and rebuilding, as well as helping local landlords transform their properties for both short and long-term rentals, giving them maximum return on their investments.",
+        "why_us_title": "Why Us",
+        "why_us_content": "Founded with a deep-seated passion for transforming houses into homes, Hernandez Interior Home Solutions has emerged as a beacon of reliability and skill in the handyman industry. Our journey began with the vision of creating a service that not only excels in technical proficiency but also prioritizes transparency and customer satisfaction. Benefit from our extensive experience, as our team boasts over 35 years of combined knowledge in the realms of drywall, painting, and comprehensive home repairs. Each member brings a unique skill set, contributing to a collaborative environment that thrives on excellence.",
+        "tagline": "Your home deserves the best—Hernandez Interior Home Solutions is here to deliver it."
+    },
+    "gallery": {
+        "label": "Portfolio",
+        "title": "Our Masterpieces",
+        "description": "Explore our diverse portfolio of transformations. From intricate drywall repairs to complete home renovations, every project is a testament to our commitment to excellence."
+    },
+    "cta": {
+        "title": "Ready to transform your home?",
+        "subtitle": "Schedule your free consultation today.",
+        "button": "Get a Quote"
+    },
+    "map": {
+        "serving": "Serving Central Florida"
+    }
+}

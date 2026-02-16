@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+    const { t } = useTranslation();
     return (
         <section className="relative min-h-[100dvh] w-full overflow-hidden flex items-center">
             {/* Background Image */}
@@ -15,11 +17,6 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             </div>
 
-            {/* Top Right Icon 
-            <div className="absolute top-24 right-6 lg:top-65 lg:right-24 z-10 animate-fade-in">
-                <img src="/Logo_icon.png" alt="Hernandez Interior Home Solutions Icon" className="w-40 h-40 md:w-40 md:h-40 drop-shadow-lg opacity-90" />
-            </div> */}
-
             {/* Content Container */}
             <div className="relative h-full w-full max-w-7xl mx-auto px-6 lg:px-24 flex flex-col justify-center text-white py-20 pt-32">
                 <motion.div
@@ -31,17 +28,17 @@ const Hero = () => {
                     <div className="flex items-center gap-4 mb-6">
                         <div className="h-1 w-12 bg-hihs-accent"></div>
                         <span className="uppercase tracking-[0.2em] text-sm font-medium text-gray-200">
-                            Est. 1989
+                            {t('hero.est')}
                         </span>
                     </div>
 
                     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight tracking-tight mb-8">
-                        Crafting <span className="text-hihs-accent">Exceptional</span> <br />
-                        Living Spaces.
+                        {t('hero.crafting')} <span className="text-hihs-accent">{t('hero.exceptional')}</span> <br />
+                        {t('hero.living_spaces')}
                     </h1>
 
                     <p className="text-base sm:text-lg lg:text-xl text-gray-200 leading-relaxed max-w-2xl mb-10">
-                        Hernandez Interior Home Solutions brings over 35 years of expertise to drywall, painting, and restoration. We don&apos;t just fix homes; we elevate them.
+                        {t('hero.description')}
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -49,13 +46,13 @@ const Hero = () => {
                             href="#contact"
                             className="px-8 py-4 bg-hihs-accent text-white font-bold tracking-wider rounded-sm hover:bg-white hover:text-hihs-charcoal transition-all duration-300 text-center shadow-lg"
                         >
-                            START YOUR PROJECT
+                            {t('hero.start_project')}
                         </a>
                         <a
                             href="#gallery"
                             className="px-8 py-4 border border-white text-white font-bold tracking-wider rounded-sm hover:bg-white hover:text-hihs-charcoal transition-all duration-300 text-center backdrop-blur-sm"
                         >
-                            VIEW PORTFOLIO
+                            {t('hero.view_portfolio')}
                         </a>
                     </div>
                 </motion.div>
@@ -68,7 +65,7 @@ const Hero = () => {
                 transition={{ delay: 1.5, duration: 1 }}
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white flex flex-col items-center gap-2"
             >
-                <span className="text-xs uppercase tracking-widest opacity-70">Scroll</span>
+                <span className="text-xs uppercase tracking-widest opacity-70">{t('hero.scroll')}</span>
                 <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
             </motion.div>
         </section>
