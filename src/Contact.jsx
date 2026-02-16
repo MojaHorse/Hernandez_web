@@ -1,71 +1,71 @@
 import { motion } from 'framer-motion';
 import { Send, Phone, Mail } from 'lucide-react';
+import ServiceMap from './ServiceMap';
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-16 lg:py-24 bg-hihs-charcoal text-white">
+        <section id="contact" className="py-6 lg:py-10 bg-hihs-charcoal text-white">
             <div className="max-w-7xl mx-auto px-6 lg:px-24">
                 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
 
                     {/* Contact Info */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <span className="text-hihs-accent font-semibold tracking-widest uppercase text-sm">
-                            Get in Touch
-                        </span>
-                        <h2 className="mt-4 text-3xl md:text-4xl font-bold leading-tight">
-                            Ready to start your <br />
-                            <span className="text-gray-400">next project?</span>
-                        </h2>
-                        <p className="mt-6 text-gray-400 text-base md:text-lg max-w-md">
-                            Tell us more about your upcoming project using the form, or give us a call to schedule a free estimate.
-                        </p>
+                    <div className="space-y-8">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <span className="text-hihs-accent font-semibold tracking-widest uppercase text-sm">
+                                Get in Touch
+                            </span>
+                            <h2 className="mt-4 text-3xl md:text-4xl font-bold leading-tight">
+                                Ready to start your <br />
+                                <span className="text-gray-400">next project?</span>
+                            </h2>
+                            <p className="mt-6 text-gray-400 text-base md:text-lg max-w-md">
+                                Tell us more about your upcoming project using the form, or give us a call to schedule a free estimate.
+                            </p>
 
-                        <div className="mt-10 md:mt-12 space-y-6 md:space-y-8">
-                            <div className="flex items-start gap-4 group">
-                                <div className="p-3 bg-white/10 rounded-sm group-hover:bg-hihs-accent transition-colors shrink-0">
-                                    <Phone size={24} />
+                            <div className="mt-10 md:mt-12 space-y-6 md:space-y-8">
+                                {/* ... existing contact details ... */}
+                                <div className="flex items-start gap-4 group">
+                                    <div className="p-3 bg-white/10 rounded-sm group-hover:bg-hihs-accent transition-colors shrink-0">
+                                        <Phone size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-medium">Call Us</h4>
+                                        <a href="tel:6892932987" className="text-gray-400 hover:text-white transition-colors">
+                                            (689) 293-2987
+                                        </a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 className="text-lg font-medium">Call Us</h4>
-                                    <a href="tel:6892932987" className="text-gray-400 hover:text-white transition-colors">
-                                        (689) 293-2987
-                                    </a>
+
+                                <div className="flex items-start gap-4 group">
+                                    <div className="p-3 bg-white/10 rounded-sm group-hover:bg-hihs-accent transition-colors shrink-0">
+                                        <Mail size={24} />
+                                    </div>
+                                    <div>
+                                        <h4 className="text-lg font-medium">Email Us</h4>
+                                        <a href="mailto:info@flrepairmen.com" className="text-gray-400 hover:text-white transition-colors">
+                                            info@flrepairmen.com
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                        </motion.div>
 
-                            <div className="flex items-start gap-4 group">
-                                <div className="p-3 bg-white/10 rounded-sm group-hover:bg-hihs-accent transition-colors shrink-0">
-                                    <Mail size={24} />
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-medium">Email Us</h4>
-                                    <a href="mailto:info@flrepairmen.com" className="text-gray-400 hover:text-white transition-colors">
-                                        info@flrepairmen.com
-                                    </a>
-                                </div>
-                            </div>
-
-                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 group cursor-pointer">
-                                <div className="p-3 bg-white/10 rounded-sm group-hover:bg-hihs-accent transition-colors shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-white">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335" />
-                                        <circle cx="12" cy="9" r="2.5" fill="#fff" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h4 className="text-lg font-medium group-hover:text-hihs-accent transition-colors">Service Area</h4>
-                                    <p className="text-gray-400 group-hover:text-white transition-colors">
-                                        Proudly serving Florida homeowners.
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </motion.div>
+                        {/* Map Section - Mobile: Stacked, Desktop: Below Text */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            className="w-full h-[300px] md:h-[350px] rounded-sm overflow-hidden border border-white/10"
+                        >
+                            <ServiceMap />
+                        </motion.div>
+                    </div>
 
                     {/* Contact Form */}
                     <motion.div
