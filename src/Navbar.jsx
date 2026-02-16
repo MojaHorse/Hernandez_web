@@ -2,8 +2,11 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './components/LanguageSwitcher';
 
 const Navbar = () => {
+    const { t } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false); // Tracks if we are down the page (>50px)
     const [isScrolling, setIsScrolling] = useState(false); // Tracks if currently scrolling
@@ -29,11 +32,11 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Home', href: '/#home', type: 'hash' },
-        { name: 'Services', href: '/#services', type: 'hash' },
-        { name: 'Gallery', href: '/gallery', type: 'page' },
-        { name: 'Our Story', href: '/our-story', type: 'page' },
-        { name: 'Contact', href: '/#contact', type: 'hash' },
+        { name: t('nav.home'), href: '/#home', type: 'hash' },
+        { name: t('nav.services'), href: '/#services', type: 'hash' },
+        { name: t('nav.gallery'), href: '/gallery', type: 'page' },
+        { name: t('nav.our_story'), href: '/our-story', type: 'page' },
+        { name: t('nav.contact'), href: '/#contact', type: 'hash' },
     ];
 
     const handleNavClick = (e, link) => {
@@ -91,18 +94,18 @@ const Navbar = () => {
             {/* Top Bar - Hidden on mobile, visible on desktop */}
             <div className={`hidden lg:flex justify-between items-center px-6 lg:px-24 py-2 text-xs font-medium transition-all duration-300 ${scrolled ? 'bg-hihs-charcoal text-white/80' : 'bg-hihs-charcoal/90 text-white/90 backdrop-blur-sm'}`}>
                 <div className="flex gap-6">
-                    <div className="flex items-center gap-2">
+                    <a href="tel:6892932987" className="flex items-center gap-2 hover:text-white transition-colors">
                         <Phone size={14} className="text-hihs-accent" />
-                        <span>(689) 293-2987</span>
-                    </div>
-                    <div className="flex items-center gap-2">
+                        <span>{t('nav.phone')} (689) 293-2987</span>
+                    </a>
+                    <a href="mailto:info@flrepairmen.com" className="flex items-center gap-2 hover:text-white transition-colors">
                         <Mail size={14} className="text-hihs-accent" />
-                        <span>info@flrepairmen.com</span>
-                    </div>
+                        <span>{t('nav.email')} info@flrepairmen.com</span>
+                    </a>
                 </div>
                 <div className="flex items-center gap-2">
                     <Clock size={14} className="text-hihs-accent" />
-                    <span>Mon - Sat: 8:00 AM - 6:00 PM</span>
+                    <span>{t('nav.mon_sat')}</span>
                 </div>
             </div>
 
@@ -123,10 +126,10 @@ const Navbar = () => {
                     </Link>
 
                     {/* Desktop Menu */}
-                    <div className="hidden lg:flex items-center gap-10">
+                    <div className="hidden lg:flex items-center gap-6">
                         {navLinks.map((link) => (
                             <a
-                                key={link.name}
+                                key={link.href} // Changed key to href since name changes with language
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e, link)}
                                 className="text-sm font-semibold text-hihs-charcoal hover:text-hihs-accent tracking-wide uppercase transition-colors relative group cursor-pointer"
@@ -135,26 +138,30 @@ const Navbar = () => {
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-hihs-accent transition-all group-hover:w-full"></span>
                             </a>
                         ))}
-                    </div>
 
-                    {/* CTA Button */}
-                    <div className="hidden lg:block">
+                        <LanguageSwitcher />
+
+                        {/* CTA Button */}
                         <a
                             href="/#contact"
                             onClick={(e) => handleNavClick(e, { href: '/#contact', type: 'hash' })}
                             className="bg-hihs-accent text-white px-6 py-3 rounded-sm text-sm font-bold tracking-wider hover:bg-hihs-charcoal transition-all shadow-lg shadow-hihs-accent/20 cursor-pointer"
                         >
-                            GET A QUOTE
+                            {t('nav.get_quote_btn')}
                         </a>
                     </div>
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="lg:hidden text-hihs-charcoal"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        {isOpen ? <X size={32} /> : <Menu size={32} />}
-                    </button>
+
+                    {/* Mobile Menu Button + Language Switcher (Mobile) */}
+                    <div className="lg:hidden flex items-center gap-4">
+                        <LanguageSwitcher />
+                        <button
+                            className="text-hihs-charcoal"
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            {isOpen ? <X size={32} /> : <Menu size={32} />}
+                        </button>
+                    </div>
                 </div>
 
                 {/* Mobile Menu */}
@@ -169,7 +176,7 @@ const Navbar = () => {
                             <div className="flex flex-col p-8 space-y-6 items-center text-center">
                                 {navLinks.map((link) => (
                                     <a
-                                        key={link.name}
+                                        key={link.href}
                                         href={link.href}
                                         onClick={(e) => handleNavClick(e, link)}
                                         className="text-xl font-bold text-hihs-charcoal hover:text-hihs-accent"
@@ -182,17 +189,17 @@ const Navbar = () => {
                                     onClick={(e) => handleNavClick(e, { href: '/#contact', type: 'hash' })}
                                     className="w-full bg-hihs-accent text-white py-4 rounded-sm text-lg font-bold hover:bg-hihs-charcoal transition-colors transform active:scale-95"
                                 >
-                                    GET A QUOTE
+                                    {t('nav.get_quote_btn')}
                                 </a>
 
                                 <div className="pt-6 border-t border-gray-100 w-full flex flex-col gap-4 text-sm text-gray-500">
                                     <div className="flex justify-center items-center gap-2">
                                         <Phone size={16} className="text-hihs-accent" />
-                                        <span>(689) 293-2987</span>
+                                        <span>{t('nav.phone')}</span>
                                     </div>
                                     <div className="flex justify-center items-center gap-2">
                                         <Mail size={16} className="text-hihs-accent" />
-                                        <span>info@flrepairmen.com</span>
+                                        <span>{t('nav.email')}</span>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +207,7 @@ const Navbar = () => {
                     )}
                 </AnimatePresence>
             </nav>
-        </header>
+        </header >
     );
 };
 

@@ -3,6 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import { useTranslation } from 'react-i18next';
 
 // Fix for default marker icon issue in React-Leaflet/Webpack/Vite
 let DefaultIcon = L.icon({
@@ -15,6 +16,7 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const ServiceMap = () => {
+    const { t } = useTranslation();
     const position = [28.5383, -81.3792]; // Orlando, FL coordinates
     const serviceRadius = 48280; // ~30 miles in meters
 
@@ -36,7 +38,7 @@ const ServiceMap = () => {
                     <Popup>
                         <div className="text-center">
                             <h3 className="font-bold text-hihs-charcoal">Hernandez Interior Home Solutions</h3>
-                            <p className="text-sm text-gray-600">Serving Central Florida</p>
+                            <p className="text-sm text-gray-600">{t('map.serving')}</p>
                         </div>
                     </Popup>
                 </Marker>

@@ -1,0 +1,112 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Nosotros",
+        "services": "Servicios",
+        "gallery": "Galería",
+        "our_story": "Nuestra Historia",
+        "contact": "Contacto",
+        "get_quote_btn": "Obtener Presupuesto",
+        "phone": "Llámenos:",
+        "email": "Email:",
+        "mon_sat": "Lun - Sab: 8:00 AM - 6:00 PM"
+    },
+    "hero": {
+        "est": "EST. 1989",
+        "crafting": "Creando",
+        "exceptional": "Excepcionales",
+        "living_spaces": "Espacios de Vida",
+        "description": "Renovaciones y reparaciones de hogar premium en Florida Central. Desde paneles de yeso hasta carpintería personalizada, damos vida a su visión con precisión y cuidado.",
+        "start_project": "Comenzar Proyecto",
+        "view_portfolio": "Ver Nuestro Trabajo",
+        "scroll": "Deslizar"
+    },
+    "about": {
+        "section_label": "Sobre Nosotros",
+        "title_building": "Construyendo Confianza,",
+        "title_one_home": "Un Hogar a la Vez.",
+        "legacy_title": "Un Legado de Excelencia",
+        "legacy_text_1": "Hernandez Interior Home Solutions es una empresa familiar construida sobre la integridad, la calidad y la confianza. Tratamos su hogar como si fuera el nuestro.",
+        "legacy_text_2": "Con más de 35 años de experiencia, nos especializamos en transformar espacios con acabados de alta gama y atención al detalle.",
+        "why_choose_title": "¿Por Qué Elegirnos?",
+        "reason_1": "Licencia y Seguro",
+        "reason_2": "Mano de Obra de Calidad",
+        "reason_3": "Precios Transparentes",
+        "reason_4": "Propiedad Local",
+        "years_exp": "Años de Experiencia",
+        "projects_completed": "Proyectos Completados"
+    },
+    "services": {
+        "expertise_label": "Nuestra Experiencia",
+        "title": "Servicios Premium",
+        "description": "Aportamos más de tres décadas de artesanía y atención al detalle a cada proyecto. Ya sea una nueva capa de pintura o una renovación compleja, tenemos las habilidades para elevar su hogar.",
+        "tile_flooring": "Pisos de Baldosa",
+        "tile_desc": "Instalación profesional de baldosas para pisos, paredes y placas para salpicaduras. Patrones detallados y acabados duraderos.",
+        "drywall": "Instalación de Drywall",
+        "drywall_desc": "Servicios completos de paneles de yeso, incluyendo instalación, acabado y reparación para paredes lisas y sin costuras.",
+        "painting": "Pintura de Casas",
+        "painting_desc": "Pintura interior y exterior utilizando productos premium para un color vibrante y duradero.",
+        "plumbing": "Plomería",
+        "plumbing_desc": "Reparaciones de plomería confiables e instalaciones de accesorios para cocinas y baños.",
+        "electrical": "Electricidad",
+        "electrical_desc": "Servicios eléctricos seguros y eficientes, desde la instalación de accesorios hasta reparaciones menores.",
+        "remodeling": "Remodelación",
+        "remodeling_desc": "Remodelación completa del hogar para transformar su cocina, baño o espacio vital.",
+        "custom_closets": "Armarios Personalizados",
+        "custom_closets_desc": "Diseño e instalación de estanterías y soluciones de almacenamiento personalizadas para maximizar su espacio.",
+        "appliance": "Instalación de Electrodomésticos",
+        "appliance_desc": "Instalación experta de electrodomésticos asegurando una configuración y funcionalidad adecuadas.",
+        "carpentry": "Carpintería General",
+        "carpentry_desc": "Trabajos de carpintería personalizados incluyendo molduras y reparaciones estructurales."
+    },
+    "contact": {
+        "get_in_touch": "Ponerse en Contacto",
+        "ready_start": "¿Listo para comenzar su",
+        "next_project": "próximo proyecto?",
+        "description": "Cuéntenos más sobre su próximo proyecto usando el formulario, o llámenos para programar un presupuesto gratuito.",
+        "call_us": "Llámenos",
+        "email_us": "Envíenos un Email",
+        "form_first_name": "Nombre",
+        "form_last_name": "Apellido",
+        "form_email": "Correo Electrónico",
+        "form_project_type": "Tipo de Proyecto",
+        "form_message": "Mensaje",
+        "send_request": "Enviar Solicitud",
+        "placeholder_name": "Juan",
+        "placeholder_lastname": "Pérez",
+        "placeholder_email": "juan@ejemplo.com",
+        "placeholder_message": "Cuéntenos sobre su proyecto...",
+        "select_service": "Seleccione un servicio...",
+        "service_painting": "Pintura de Casa",
+        "service_drywall": "Reparación de Drywall",
+        "service_restoration": "Restauración",
+        "service_other": "Otro"
+    },
+    "footer": {
+        "rights_reserved": "Todos los derechos reservados.",
+        "built_by": "Construido Por"
+    },
+    "our_story": {
+        "label": "Nuestra Historia",
+        "title": "Más que un espacio—es un reflejo de usted.",
+        "p1": "En HIHS, reconocemos que su hogar es más que un espacio—es un reflejo de su estilo de vida y personalidad. Nuestra promesa es tratar su hogar con el respeto y cuidado que merece, asegurando que cada proyecto sea una mezcla perfecta de profesionalismo y atención personalizada.",
+        "p2": "A lo largo de los años hemos hecho de todo, desde reparaciones básicas de paneles de yeso hasta remodelaciones de cocinas y renovaciones completas de casas. Ningún trabajo es demasiado pequeño para nosotros; sin embargo, en los últimos años nos hemos centrado en renovaciones completas.",
+        "p3": "Nos especializamos en demoliciones y reconstrucciones completas de cocinas y baños, así como en ayudar a los propietarios locales a transformar sus propiedades para alquileres a corto y largo plazo, dándoles el máximo retorno de su inversión.",
+        "why_us_title": "¿Por Qué Nosotros?",
+        "why_us_content": "Fundada con una profunda pasión por transformar casas en hogares, Hernandez Interior Home Solutions ha surgido como un faro de fiabilidad y habilidad en la industria. Nuestro viaje comenzó con la visión de crear un servicio que no solo sobresalga en competencia técnica sino que también priorice la transparencia y la satisfacción del cliente. Benefíciese de nuestra amplia experiencia, ya que nuestro equipo cuenta con más con más de 35 años de conocimiento combinado en los ámbitos de paneles de yeso, pintura y reparaciones integrales del hogar. Cada miembro aporta un conjunto de habilidades único, contribuyendo a un entorno colaborativo que prospera en la excelencia.",
+        "tagline": "Su hogar merece lo mejor—Hernandez Interior Home Solutions está aquí para entregarlo."
+    },
+    "gallery": {
+        "label": "Portafolio",
+        "title": "Nuestras Obras Maestras",
+        "description": "Explore nuestro diverso portafolio de transformaciones. Desde intrincadas reparaciones de paneles de yeso hasta renovaciones completas del hogar, cada proyecto es un testimonio de nuestro compromiso con la excelencia."
+    },
+    "cta": {
+        "title": "¿Listo para transformar su hogar?",
+        "subtitle": "Programe su consulta gratuita hoy.",
+        "button": "Obtener Presupuesto"
+    },
+    "map": {
+        "serving": "Sirviendo a Florida Central"
+    }
+}
